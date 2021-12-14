@@ -10,7 +10,6 @@ get_color_by_index PROC,ind:DWORD
 	mov eax,ind
 	xor edx,edx
 	div ebx
-	push eax
 
 	invoke list_get_item,image_vector,ind
 	push eax
